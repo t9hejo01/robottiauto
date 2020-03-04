@@ -30,13 +30,18 @@ void setup() {
   pinMode(leftMotorBackward, OUTPUT);
   pinMode(RightMotorBackward, OUTPUT);
 
-  servo_motor.attach(11);
+  servo_motor.attach(11); //Määritetään Servo-pin
 
   servo_motor.write(90);
   delay(2000);
   distance = readPing();
   delay(100);
-  
+  distance = readPing();
+  delay(100);
+  distance = readPing();
+  delay(100);
+  distance = readPing();
+  delay(100);
 }
 
 void loop() {
